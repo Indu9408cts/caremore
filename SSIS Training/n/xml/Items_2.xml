@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<Items xmlns="ItemsXSDSchema">  
+    <Item>
+        <Id>1</Id>
+        <ItemNumber>J1231231</ItemNumber>
+        <ItemName>Mouse</ItemName>
+        <Price>29.99</Price>
+    </Item>
+</Items>

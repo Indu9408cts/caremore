@@ -1,0 +1,14 @@
+CREATE TABLE [SSIS_DB_ARC] (
+    [FirstName] varchar(50),
+    [LastName] varchar(50),
+    [Company] varchar(50),
+    [Address] varchar(50),
+    [City] varchar(50),
+    [County] varchar(50),
+    [State] varchar(50),
+    [ZIP] int,
+    [Phone] varchar(50),
+    [Fax] varchar(50),
+    [Email] varchar(50),
+    [Web] varchar(50)
+)

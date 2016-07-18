@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<Items xmlns="ItemsXSDSchema">  
+    <Item>
+        <Id>1</Id>
+        <ItemNumber>I2345343</ItemNumber>
+        <ItemName>Monitor</ItemName>
+        <Price>299.99</Price>
+    </Item>
+</Items>

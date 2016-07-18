@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<Items xmlns="ItemsXSDSchema">  
+    <Item>
+        <Id>1</Id>
+        <ItemNumber>K0456212</ItemNumber>
+        <ItemName>Keyboard</ItemName>
+        <Price>49.99</Price>
+    </Item>
+</Items>

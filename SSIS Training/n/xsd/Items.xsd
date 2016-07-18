@@ -1,0 +1,38 @@
+<xsd:schema xmlns:schema="ItemsXSDSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:sqltypes="http://schemas.microsoft.com/sqlserver/2004/sqltypes" targetNamespace="ItemsXSDSchema" elementFormDefault="qualified">
+    <xsd:import namespace="http://schemas.microsoft.com/sqlserver/2004/sqltypes" schemaLocation="http://schemas.microsoft.com/sqlserver/2004/sqltypes/sqltypes.xsd" />
+    <xsd:element name="Items">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element minOccurs="0" maxOccurs="unbounded" name="Item">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="Id" type="sqltypes:int" />
+                            <xsd:element name="ItemNumber">
+                                <xsd:simpleType>
+                                    <xsd:restriction base="sqltypes:nvarchar" >
+                                        <xsd:maxLength value="20" />
+                                    </xsd:restriction>
+                                </xsd:simpleType>
+                            </xsd:element>
+                            <xsd:element name="ItemName">
+                                <xsd:simpleType>
+                                    <xsd:restriction base="sqltypes:nvarchar" >
+                                        <xsd:maxLength value="60" />
+                                    </xsd:restriction>
+                                </xsd:simpleType>
+                            </xsd:element>
+                            <xsd:element name="Price">
+                                <xsd:simpleType>
+                                    <xsd:restriction base="sqltypes:numeric">
+                                        <xsd:totalDigits value="18" />
+                                        <xsd:fractionDigits value="2" />
+                                    </xsd:restriction>
+                                </xsd:simpleType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>
